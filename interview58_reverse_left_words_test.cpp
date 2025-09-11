@@ -11,4 +11,6 @@ TEST(SolutionTest, reverseLeftWords)
     EXPECT_EQ(s->reverseLeftWords("abcdefg", 2), "cdefgab");
     EXPECT_EQ(s->reverseLeftWords("lrloseumgh", 6), "umghlrlose");
     EXPECT_EQ(s->reverseLeftWords("100",3), "100");
+
+    delete s;
 }

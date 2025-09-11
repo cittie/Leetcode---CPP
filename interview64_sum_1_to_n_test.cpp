@@ -11,4 +11,6 @@ TEST(SolutionTest, sumNums)
     EXPECT_EQ(s->sumNums(0), 0);
     EXPECT_EQ(s->sumNums(1), 1);
     EXPECT_EQ(s->sumNums(100), 5050);
+
+    delete s;
 }

@@ -8,13 +8,9 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/${fileBasenameNoExtension}.o",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
             "args": [],
-            "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
             "preLaunchTask": "g++ build active file"
         },
         {
@@ -23,11 +19,7 @@
             "request": "launch",
             "program": "${workspaceRoot}/gtest_main.o",
             "args": [],
-            "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
             "preLaunchTask": "build test file"
         }
     ]
