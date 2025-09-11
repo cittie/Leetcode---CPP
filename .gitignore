@@ -1,0 +1,32 @@
+# 忽略编译产物
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.lib
+*.dll
+
+# 忽略可执行文件
+*.exe
+*.out
+*.app
+
+# 忽略调试符号文件（例如在macOS上）
+*.dSYM/
+*.pdb
+
+# 忽略IDE和编辑器生成的临时文件/目录
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 忽略编译生成的依赖文件
+*.d
+
+# 忽略构建目录（如果使用out-of-source构建）
+build/
+cmake-build-*/
+

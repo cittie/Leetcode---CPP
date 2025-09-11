@@ -2,7 +2,7 @@
 # Author: Generated for Leetcode---CPP project
 
 # Compiler and flags
-CXX = g++
+CXX = clang++
 CXXFLAGS = -std=c++17 -g -Wall
 LDFLAGS = -lgtest -lpthread
 
