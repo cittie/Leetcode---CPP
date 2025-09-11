@@ -35,11 +35,6 @@ $(BUILD_DIR)/%_test: %_test.cpp $(GTEST_MAIN) $(HEADERS)
 	@echo "Building $@..."
 	$(CXX) $(CXXFLAGS) -o $@ $(GTEST_MAIN) $< $(LDFLAGS)
 
-# Special rule for tests that don't follow the standard naming pattern
-$(BUILD_DIR)/1309_test: 1309_test.cpp $(GTEST_MAIN) 1309_decrypt-string-from-alphabet-to-integer-mapping.hpp
-	@echo "Building $@..."
-	$(CXX) $(CXXFLAGS) -o $@ $(GTEST_MAIN) $< $(LDFLAGS)
-
 # Run all tests
 run-test: all
 	@echo "Running all tests..."
